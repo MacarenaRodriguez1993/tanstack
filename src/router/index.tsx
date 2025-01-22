@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { MembersPage } from '../pages';
+import { FormLogin, MembersPage } from '../pages';
 import App from '../App';
 
 
@@ -13,6 +13,10 @@ export const router = createBrowserRouter([
   {
     path: '/members',
     element: <MembersPage />,
+  },
+  {
+    path: '/login',
+    element: <FormLogin />,
   },
   {
     path: '*',
